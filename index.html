@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio - Lakshmi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav>
+  <div class="logo">Lakshmi</div>
+  <ul>
+    <li onclick="scrollToSection('home')">Home</li>
+    <li onclick="scrollToSection('about')">About</li>
+    <li onclick="scrollToSection('skills')">Skills</li>
+    <li onclick="scrollToSection('projects')">Projects</li>
+    <li onclick="scrollToSection('contact')">Contact</li>
+  </ul>
+</nav>
+
+<!-- ===== Home ===== -->
+<section id="home">
+  <h1>Hello, I'm Lakshmi</h1>
+  <p>Aspiring Software Developer | computer science student </p>
+  <button onclick="scrollToSection('contact')">Hire Me</button>
+</section>
+
+<!-- ===== About ===== -->
+<section id="about">
+  <div class="container about-content">
+    <img src="https://i.postimg.cc/Ss3xWbw4/IMG-20250621-WA0026-2.jpg" alt="Lakshmi's Photo">
+    <div class="text">
+      <h2>About Me</h2>
+      <p>Hi! I'm Lakshmi, a passionate computer student and programmer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Skills ===== -->
+<section id="skills">
+  <div class="container">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h3>HTML & CSS</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+      </div>
+      <div class="skill">
+        <h3>Python</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+      </div>
+      <div class="skill">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section id="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h4>Hotel Management System</h4>
+        <p>A Python Tkinter + MySQL project for managing hotel bookings efficiently.</p>
+      </div>
+      <div class="project-card">
+        <h4>Recipe Book App</h4>
+        <p>A Tkinter application to store, view, and manage recipes with MySQL database.</p>
+      </div>
+      <div class="project-card">
+        <h4>Personal Diary App</h4>
+        <p>A secure diary app using Python and MySQL with CRUD operations for personal notes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  &copy; 2025 Lakshmi. All rights reserved. 
+  <br>
+  <a href="mailto:lakshmi@example.com">Email Me</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
